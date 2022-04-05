@@ -1,5 +1,6 @@
 package hwweek09;
-
+/*Write the programme that tell you which line pass through particular stations. Just use Zone 1 stations name.
+* */
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -48,6 +49,7 @@ public class Program10 {
             String name = st.readLine().toLowerCase(Locale.ROOT);//user input
             //check station name in map list
             if (station.containsKey(name)) {
+                 System.out.print("Lines pass through "+name+" station : ");
                 System.out.println(station.get(name));
             } else {
                 System.out.println("Entered station is not in Zone 1 or not between A to G");
